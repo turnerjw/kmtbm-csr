@@ -25,7 +25,7 @@ const Pokemon = () => {
   return (
     <div className="layout">
       <div className="card">
-        <p style={{ fontSize: "20px" }}>
+        <p className="text">
           <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #{id}
         </p>
         <div className="image">
