@@ -2,20 +2,18 @@ import Image from "next/image";
 
 const Pokemon = ({ data }) => {
   return (
-    <div className="layout">
-      <div className="card">
-        <p className="text">
-          <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #
-          {data.id}
-        </p>
-        <div className="image">
-          <Image
-            src={data.sprites.front_default}
-            width={100}
-            height={100}
-            priority
-          />
-        </div>
+    <div className="card">
+      <p className="text">
+        <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #
+        {data.id}
+      </p>
+      <div className="image">
+        <Image
+          src={data.sprites.front_default}
+          width={100}
+          height={100}
+          priority
+        />
       </div>
     </div>
   );

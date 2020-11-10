@@ -8,20 +8,20 @@ const Pokemon = ({ data }) => {
   if (router.isFallback) return <FallbackCard />;
 
   return (
-      <div className="card">
-        <p className="text">
-          <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #
-          {data.id}
-        </p>
-        <div className="image">
-          <Image
-            src={data.sprites.front_default}
-            width={100}
-            height={100}
-            priority
-          />
-        </div>
+    <div className="card">
+      <p className="text">
+        <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #
+        {data.id}
+      </p>
+      <div className="image">
+        <Image
+          src={data.sprites.front_default}
+          width={100}
+          height={100}
+          priority
+        />
       </div>
+    </div>
   );
 };
 
