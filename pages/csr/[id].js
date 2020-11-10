@@ -12,11 +12,8 @@ const Pokemon = () => {
     if (id)
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
         .then((response) => response.json())
-        .then((data) => setData(data))
-        .catch();
+        .then((data) => setData(data));
   }, [id]);
-
-  console.log(data);
 
   if (!data)
     return (
@@ -31,8 +28,7 @@ const Pokemon = () => {
         <p style={{ fontSize: "20px" }}>
           <b>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</b> #{id}
         </p>
-        <div className="image"
-        >
+        <div className="image">
           <Image
             src={data.sprites.front_default}
             width={100}
