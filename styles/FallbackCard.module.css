@@ -30,16 +30,41 @@
 }
 
 .text {
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(to top right, lightgrey, white);
-    border-radius: 30px;
-    margin: 16px 0px;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    lightgrey 15%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 30px;
+  margin: 16px 0px;
+  background-size: 400% 400%;
+  animation: AnimationName 2s infinite;
 }
 
 .image {
-    background: linear-gradient(to top right, lightgrey, white);
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    lightgrey 30%,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  background-size: 200% 100%;
+  animation: AnimationName 2s infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
