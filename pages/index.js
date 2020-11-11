@@ -22,7 +22,7 @@ export default function Home() {
             <p>Load the Javascript and then load the data</p>
           </a>
 
-          <a href="/ssr" className={styles.card}>
+          <a href="/ssr/1" className={styles.card}>
             <h3>Server Side Rendering &rarr;</h3>
             <p>
               The server fetches the data, and then sends a hydrated page to the
@@ -30,7 +30,7 @@ export default function Home() {
             </p>
           </a>
 
-          <a href="ssg/1" className={styles.card}>
+          <a href="/ssg/1" className={styles.card}>
             <h3>Static Site Generation &rarr;</h3>
             <p>Data is fetched and pages are pre-made at build/deploy time</p>
           </a>
